@@ -3,7 +3,7 @@ This is a repository for the rock paper scissors game in Python.</br>
 Title - Rock Paper Scissors - Python </br>
 Description - Made a simple yet quirky Rock Paper Scissors game, here the user has to compete with the computer for a certain number of rounds, the smart one, with the greater number of points by the end of all the rounds, WINS the ULTIMATE game. </br>
 </br>
-<img width="1440" alt="Working of the Program shown in a screenshot." src="/Users/vedantmistry/rock-paper-scissors-python/images/Screenshot 2023-01-28 at 04.37.54.png">
+<img width="1440" alt="Working of the Program shown in a screenshot." src="images/Screenshot 2023-01-28 at 04.37.54.png">
 </br>
 ProjectLog[0] - In this series of ProjectLogs, i will be working on making the Rock Paper Scissors game in Python. The functionality will include, the computer making a choice, the user making a choice, and the score will depend on the outcome. </br>
 ProjectLog[1] - The idea is simple, the game will start with the user's response, to either start or not. If yes, the user will be prompted to play his/her move. On the user's input, the computer too, will generate it's move, and based on that, the point will be rewarded to the winner. The user will be allowed to choose the number of rounds for the game. </br>
