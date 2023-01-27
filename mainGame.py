@@ -25,16 +25,14 @@ def gameDescription () :
         
 def chooseNumberOfRounds () :
     numberOfRounds = input("Choose the number of rounds for the game...The maximum limit is 20!")
-    if int(numberOfRounds) <= 0 or int(numberOfRounds) > 20 :
+    if numberOfRounds.isdigit() == False :
+        print("Please enter a valid number input!")
+        chooseNumberOfRounds ()
+    elif int(numberOfRounds) <= 0 or int(numberOfRounds) > 20 :
         print("Please enter a valid number, minimum number of rounds is 0, and maximum number of rounds is 20.")
         chooseNumberOfRounds ()
     elif int(numberOfRounds) > 0 and int(numberOfRounds) <= 20 :
         startGame (int(numberOfRounds))
-    else :
-        try :
-            int(numberOfRounds)
-        except ValueError :
-            chooseNumberOfRounds ()
 
 def startGame (numberOfRounds) :
     userScore, computerScore = 0, 0
