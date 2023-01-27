@@ -6,3 +6,4 @@ ProjectLog[1] - The idea is simple, the game will start with the user's response
 ProjectLog[2] - Completed the working part of the game. Fully functional and committed on Github repo. Still working on a few bugs related to unexpected inputs. </br>
 ProjectLog[3] - Working on the appearance of the final version of the game, for example, the game statements. </br>
 ProjectLog[4] - The second last build of the game is ready, with more interesting and better sounding statements. </br>
+ProjectLog[5] - Used the 'time' module to add a little delay to the program, achieved this by using the time.sleep() function. </br>
