@@ -1,7 +1,8 @@
 # random module for choosing the random move.
 import random
 
-global userMove, computerMove
+global userMove, computerMove, userScore, computerScore
+
 userMove, computerMove = "", ""
 userScore, computerScore = 0, 0
 
@@ -43,19 +44,19 @@ def startGame (numberOfRounds) :
         computerMove = computerMoves[random.randint(0, len(computerMoves)-1)]
         
         if userMove == computerMove :
-            print(computerMove)
             print("It's a Tie...")
+            print("{} vs {} || USER : {} | COMPUTER : {} ".format(userMove.upper(), computerMove.upper(), userScore, computerScore))
             counter += 1
         # probabilities when the user wins
         elif (userMove.lower() == "rock" and computerMove.lower() == "scissors") or (userMove.lower() == "paper" and computerMove.lower() == "rock") or (userMove.lower() == "scissors" and computerMove.lower() == "paper") :
-            print(computerMove)
             print("You win this round!")
             userScore += 1
+            print("{} vs {} || USER : {} | COMPUTER : {} ".format(userMove.upper(), computerMove.upper(), userScore, computerScore))
             counter += 1
         elif (computerMove.lower() == "rock" and userMove.lower() == "scissors") or (computerMove.lower() == "paper" and userMove.lower() == "rock") or (computerMove.lower() == "scissors" and userMove.lower() == "paper") :
-            print(computerMove)
             print("The computer wins this round!")
             computerScore += 1
+            print("{} vs {} || USER : {} | COMPUTER : {} ".format(userMove.upper(), computerMove.upper(), userScore, computerScore))
             counter += 1
         else :
             print("Please play a valid move...")
