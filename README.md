@@ -1,6 +1,6 @@
 # rock-paper-scissors-python
 This is a repository for the rock paper scissors game in Python.</br>
-Title - Rock Paper Scissors - Python
+Title - Rock Paper Scissors - Python </br>
 Description - Made a simple yet quirky Rock Paper Scissors game, here the user has to compete with the computer for a certain number of rounds, the smart one, with the greater number of points by the end of all the rounds, WINS the ULTIMATE game. </br>
 </br>
 <img width="1440" alt="Screenshot 2023-01-28 at 04 12 42" src="https://user-images.githubusercontent.com/37664832/215220315-ebe2eb03-a103-42ea-aca8-0e9c540d5cd7.png">
