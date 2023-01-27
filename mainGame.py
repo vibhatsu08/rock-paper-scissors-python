@@ -25,7 +25,7 @@ def gameDescription () :
     chooseNumberOfRounds ()
         
 def chooseNumberOfRounds () :
-    numberOfRounds = input("Choose the number of rounds for the game...The maximum limit is 20!")
+    numberOfRounds = input("Choose the number of rounds for the game...The maximum limit is 20! ")
     if numberOfRounds.isdigit() == False :
         print("Please enter a valid number input!")
         chooseNumberOfRounds ()
@@ -36,11 +36,15 @@ def chooseNumberOfRounds () :
         startGame (int(numberOfRounds))
 
 def startGame (numberOfRounds) :
+    cheekyStatements = ["HUMAN vs MACHINE...", "MACHINE vs HUMAN...", "Let's see who wins in a game of ROCK PAPER SCISSORS...", "{} rounds...".format(numberOfRounds, "LET THE GAME BEGIN!")]
+    for i in range (len(cheekyStatements)) :
+        print(cheekyStatements[i], end="\n")
+        
     userScore, computerScore = 0, 0
     computerMoves = ["rock", "paper", "scissors"]
     counter = 0
     while (counter < numberOfRounds) :
-        userMove = input("Rock, Paper or Scissors...")
+        userMove = input("Your move : Rock, Paper or Scissors...")
         computerMove = computerMoves[random.randint(0, len(computerMoves)-1)]
         
         if userMove == computerMove :
