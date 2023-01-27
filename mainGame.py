@@ -1,5 +1,6 @@
 # random module for choosing the random move.
 import random
+import time
 
 global userMove, computerMove, userScore, computerScore
 
@@ -20,12 +21,14 @@ def initiateGame () :
 def gameDescription () :
     descriptionStatements = ["Rock Paper Scissors is a simple game.", "To win the game, one must stick to the rules...which are simple and strightforward!", "This is how it goes", "Rock beats Scissors...", "Scissors beats Paper...", "Paper beats Rock...", "See...simple, Right...", "Alright, now let's get started!"]
     for i in range (len(descriptionStatements)) :
+        time.sleep(1.5)
         print(descriptionStatements[i], end="\n")
     
     chooseNumberOfRounds ()
         
 def chooseNumberOfRounds () :
     numberOfRounds = input("Choose the number of rounds for the game...The maximum limit is 20! ")
+    time.sleep(1.5)
     if numberOfRounds.isdigit() == False :
         print("Please enter a valid number input!")
         chooseNumberOfRounds ()
@@ -38,6 +41,7 @@ def chooseNumberOfRounds () :
 def startGame (numberOfRounds) :
     cheekyStatements = ["HUMAN vs MACHINE...", "MACHINE vs HUMAN...", "Let's see who wins in a game of ROCK PAPER SCISSORS...", "{} rounds...".format(numberOfRounds, "LET THE GAME BEGIN!")]
     for i in range (len(cheekyStatements)) :
+        time.sleep(1.5)
         print(cheekyStatements[i], end="\n")
         
     userScore, computerScore = 0, 0
@@ -46,7 +50,7 @@ def startGame (numberOfRounds) :
     while (counter < numberOfRounds) :
         userMove = input("Your move : Rock, Paper or Scissors...")
         computerMove = computerMoves[random.randint(0, len(computerMoves)-1)]
-        
+        time.sleep(1.5)
         if userMove == computerMove :
             print("It's a Tie...")
             print("{} vs {} || USER : {} | COMPUTER : {} ".format(userMove.upper(), computerMove.upper(), userScore, computerScore))
@@ -68,6 +72,7 @@ def startGame (numberOfRounds) :
     endGame (userScore, computerScore)
  
 def endGame (userScore, computerScore) :
+    time.sleep(1.5)
     print("Your score is : {}, and the Computer's score is {}!".format(userScore, computerScore))
     if userScore == computerScore :
         print("Congratulations, you and the computer both win the game!")
